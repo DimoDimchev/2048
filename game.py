@@ -1,5 +1,6 @@
 import tkinter as tk
 import colors as c
+import random
 
 class Game(tk.Frame):
     def __init__(self):
@@ -11,6 +12,10 @@ class Game(tk.Frame):
             self, bg=c.GRID_COLOR, bd=3, width=600, height=600
         )
         self.main_grid.grid(pady=(100, 0))
+
+        self.make_GUI()
+        self.mainloop()
+        self.start_game()
 
 
     def make_GUI(self):
@@ -37,4 +42,30 @@ class Game(tk.Frame):
         self.score_label = tk.Label(score_frame, text="0", font=c.SCORE_FONT)
         self.score_label.grid(row=1)
 
+    def start_game(self):
+        self.matrix = [[0] * 4 for _ in range(4)]
 
+        row = random.randint(0, 3)
+        col = random.randint(0, 3)
+        self.matrix[row][col] = 2
+        self.cells[row][col]['frame'].configure(bg=c.CELL_COLORS[2])
+        self.cells[row][col]['number'].configure(
+            bg=c.CELL_COLORS[2],
+            fg=c.CELL_NUMBER_COLORS[2],
+            font=c.CELL_NUMBER_FONTS[2],
+            text='2'
+        )
+
+        while self.matrix[row][col] != 0:
+            row = random.randint(0, 3)
+            col = random.randint(0, 3)
+            self.matrix[row][col] = 2
+            self.cells[row][col]['frame'].configure(bg=c.CELL_COLORS[2])
+            self.cells[row][col]['number'].configure(
+                bg=c.CELL_COLORS[2],
+                fg=c.CELL_NUMBER_COLORS[2],
+                font=c.CELL_NUMBER_FONTS[2],
+                text='2'
+            )
+
+        self.score = 0
