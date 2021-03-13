@@ -4,7 +4,7 @@
 
 Recently I started playing a modern classic in the area of mobile games 2048 and decided to create a version of it using Python and TKinter. Making the project was just as fun, as playing the game
 
-<img width="645" alt="screenshot" src="https://user-images.githubusercontent.com/38102582/111027540-91bb5200-83f9-11eb-9293-55274cf298ba.png">
+<img width="322" alt="screenshot" src="https://user-images.githubusercontent.com/38102582/111027540-91bb5200-83f9-11eb-9293-55274cf298ba.png">
 
 ## Technical stuff ##
 
