@@ -12,12 +12,11 @@ The logic of the game is pretty straightforward - it revolves around using multi
 
 ## Bugs and what needs changing ##
 
-A lot of bugs are present currently, such as:
+Bugs present:
 - ~~some of the colors in the ``colors.py`` file can't be loaded~~  - **fixed**
 - ~~bugs when making moves later on in the game~~  - **fixed**
 - ~~random freezes and crashes~~  - **mostly fixed**
 
-I will hopefully be fixing these errors in the near future
 
 Areas that can be improved:
 - there aren't any animations invloved so the game feels a bit bland (and so I'm thinking of transitioning the project to JavaScript)
